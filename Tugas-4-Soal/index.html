@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 - Javascript DOM</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="form-profile">
+        <form class="form-input" id="form-input">
+          <h1 class="title-profile">Profile Data</h1>
+          <label for="first_name">First Name : </label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="Insert First Name" />
+
+          <label for="last_name">Last Name :</label>
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Insert Last Name" />
+
+          <label for="phone_number">Phone Number :</label>
+          <input
+            type="number"
+            name="phone_number"
+            id="phone_number"
+            placeholder="Insert Phone Number" />
+
+          <label for="address">Address</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="10"
+            placeholder="Insert Address"></textarea>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </section>
+      <section class="form-item">
+        <h1 class="title-list">List Item</h1>
+        <ol id="list-items">
+          <li>First Item</li>
+          <li>Second Item</li>
+        </ol>
+        <button class="btnAdd" id="btnAdd">Tambah</button>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
