@@ -1,0 +1,117 @@
+#navbar-btn {
+  position: relative;
+}
+
+#navbar-btn .btn-logout {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+#navbar-btn .btn-logout:hover {
+  color: white;
+  background-color: red;
+}
+
+header .navbar .container .navbar-btn .btn-login:hover {
+  background-color: transparent;
+}
+
+main .container .row .card {
+  border-color: #149a75;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .container .row .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* transaction */
+
+.content .container .content-card {
+  display: flex;
+  gap: 25px;
+}
+
+.content .container .content-product {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+.content .container .content-product .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-color: #149a75;
+}
+
+.content .container .content-product .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.content .container .content-form {
+  width: 50%;
+  display: grid;
+}
+
+@media (max-width: 900px) {
+  .content .container .content-product {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .content .container .content-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .content .container .content-product {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content .container .content-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .content .container .content-product {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* login form */
+
+.content-login .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.content-login .container form {
+  border: 2px solid #149a75;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
